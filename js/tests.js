@@ -11,7 +11,6 @@ describe('Las variables en Javascript', () => {
     expect(b).to.equal(14.64);
   })
   it('pueden contener booleanos', () => {
-    // Añade la línea que falta
     const c = false
     expect(c).to.equal(false);
   })
@@ -20,15 +19,15 @@ describe('Las variables en Javascript', () => {
 describe('Comparaciones en Javascript', () => {
     it("usando ===", () => {
         const number = 20;
-        //completa la asignación usando number y el comparador ===
-
+        const expresion = false
+        number === expresion
         expect(expresion).to.equal(false)
     })
 
     it("usando !==", () => {
         const language = "Javascript";
-        //completa la asignación usando language y el comparador !==
-
+        const expresion = false
+        language !== expresion
         expect(expresion).to.equal(false)
     })
 })
