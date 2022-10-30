@@ -18,14 +18,14 @@ describe('Las variables en Javascript', () => {
 
 describe('Comparaciones en Javascript', () => {
     it("usando ===", () => {
-        const number = 20;
+        const number = 20
         const expresion = false
         number === expresion
         expect(expresion).to.equal(false)
     })
 
     it("usando !==", () => {
-        const language = "Javascript";
+        const language = "Javascript"
         const expresion = false
         language !== expresion
         expect(expresion).to.equal(false)
@@ -34,17 +34,17 @@ describe('Comparaciones en Javascript', () => {
 
 describe("Operaciones aritméticas", () => {
     it("Usando suma", () => {
-        const a = 10;
+        const a = 10
         const b = 90
         expect(a+b).to.equal(100);
     })
     it("Usando multiplicación", () => {
-        const a = 13;
+        const a = 13
         const b = 1
         expect(a*b).to.equal(13);
     })
     it("Usando división", () => {
-        const a = 10;
+        const a = 10
         const b = 4
         expect(a/b).to.equal(2.5);
     })
@@ -54,14 +54,12 @@ describe('Algebra booleana', () => {
     it("Usando el operador AND (&&)", () => {
         const a = true;
         const b = true
-        
         const expression = a && b;
         expect(expression).to.equal(true);
     })
     it("Usando el operador OR (||)", () => {
         const a = false;
-        const b = false
-
+        const b = false;
         const expression = a || b;
         expect(expression).to.equal(false);
     })
@@ -74,12 +72,16 @@ describe("Ejemplos de funciones", () => {
     it("Función que nos dice si un número es par (even) o impar (odd)", () => {
         expect(evenOrOdd(2)).to.equal("even")
         expect(evenOrOdd(13)).to.equal("odd")
+        expect(evenOrOdd(8)).to.equal("even")
+        expect(evenOrOdd(21)).to.equal("odd")
     })
 
     it ("Función que nos devuelve un saludo para cada nombre", () => {
         expect(greeting("Javi")).to.equal("Hola, Javi!")
         expect(greeting("gente")).to.equal("Hola, gente!")
         expect(greeting("Mary")).to.equal("Hola, Mary!")
+        expect(greeting("Juanchis")).to.equal("Hola, Juanchis!")
+        expect(greeting("Alba")).to.equal("Hola, Alba!")
     })
 })
 

@@ -1,7 +1,14 @@
-function evenOrOdd(n) {
-    return "";
+function evenOrOdd(numero) {
+    if (numero % 2 == 0) {   
+        return "even"; 
+    }
+    else {
+        return "odd";
+    }
 }
 
-function greeting(name) {
-    return "";
+function greeting(nombre) {
+    const saludo = "Hola, ";
+    return saludo + nombre + "!";
 }
+
